@@ -1,0 +1,103 @@
+.background-shapes{
+    .box{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+        z-index: -1;
+        animation: box-shapes 5s linear infinite;
+    }
+    
+    .dot{
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        z-index: -1;
+        animation: box-shapes 5s linear infinite;
+    }
+    .circle{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 35%;
+        right: 47%; 
+        border-radius: 50%;
+        border: 2px solid #ff0000;
+        animation: box-shapes 5s linear infinite;
+    }
+    
+    .heart{
+        position: absolute;
+        font-size: 1.5rem;
+        z-index: -1;
+        animation: box-shapes 5s linear infinite;
+    }
+
+    .box-1{
+        @extend .box;
+        top: 20%;
+        left: 10%;
+        border: 3px solid #3f43fd;
+        border-radius: 0.35rem;
+    }
+
+    .box-2{
+        @extend .box;
+        top: 80%;
+        left: 40%;
+        border: 3px solid #3f43fd;
+        border-radius: 0.35rem;
+    }
+
+    .box-3{
+        @extend .box;
+        top: 20%;
+        left: 90%;
+        border: 3px solid #3f43fd;
+        border-radius: 0.35rem;
+    }
+
+    .dot-1{
+        @extend .dot;
+        top: 50%;
+        left: 6%;
+        background-color: #fdf03f;
+    }
+
+    .dot-2{
+        @extend .dot;
+        top: 25%;
+        left: 30%;
+        background-color: #fd853f;
+    }
+
+    .dot-3{
+        @extend .dot;
+        top: 15%;
+        left: 50%;
+        background-color: #3f43fd;
+    }
+
+    .dot-4{
+        @extend .dot;
+        top: 70%;
+        right: 5%;
+        background-color: #fd3fc4;
+    }
+
+    .heart-1{
+        @extend .heart;
+        color: aqua;
+        top: 45%;
+        left: 20%;
+    }
+
+    .heart-2{
+        @extend .heart;
+        color: lime;
+        top: 55%;
+        left: 45%;
+    }
+
+}

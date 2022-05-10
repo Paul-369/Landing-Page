@@ -5,9 +5,15 @@
 
 // utilities
 @import './utilities/animation';
+@import './utilities/spacing';
 
 // Components
 @import './components/buttons';
+@import './components/badges';
 
 // Layouts
 @import './layouts/header';
+@import './layouts/background_elements';
+
+// Pages
+@import './pages/home'

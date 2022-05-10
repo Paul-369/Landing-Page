@@ -1,0 +1,35 @@
+$spacing: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20;
+$directions: top, right, bottom, left;
+
+$space-axis-values: 1, 2, 3, 4, 5;
+$space-axis-keys: "x" "right", "y" "bottom";
+
+@each $space in $spacing {
+    .m-#{$space}{
+        margin: #{$space}rem !important;
+    }
+
+    @each $direction in $directions{
+        .m#{str-slice($direction, 0, 1)}-#{$space} {
+            margin-#{$direction}: #{$space}rem !important;
+        }
+    }
+
+    .p-#{$space}{
+        padding: #{$space}rem !important;
+    }
+
+    @each $direction in $directions{
+        .p#{str-slice($direction, 0, 1)}-#{$space} {
+            padding-#{$direction}: #{$space}rem !important;
+        }
+    }
+}
+
+@each $space-axis in $space-axis-values {
+    @each $key, $value in $space-axis-keys {
+        .space-#{$key}-#{$space-axis} > *{
+            margin-#{$value}: #{$space-axis}rem;
+        }
+    }
+}
