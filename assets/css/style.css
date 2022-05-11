@@ -831,6 +831,7 @@ a {
   justify-content: space-around;
   align-items: center;
   padding: 8rem;
+  min-height: calc(100vh - 80px);
 }
 .hero-area--content {
   max-width: 34rem;
@@ -844,6 +845,34 @@ a {
   font-size: 1.2rem;
   line-height: 1.8;
   color: #808080;
+}
+
+.about-area {
+  padding: 8rem 20rem;
+  background-color: #3f43fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-area__img {
+  width: 32rem;
+}
+.about-area__content {
+  color: #fff;
+}
+.about-area__content h2 {
+  font-size: 3rem;
+}
+.about-area__content p {
+  line-height: 2;
+  color: #cfcfcf;
+  text-align: justify;
+}
+.about-area__content p a {
+  color: #fff;
+}
+.about-area__content p a:hover {
+  text-shadow: 10px 20px 30px #000;
 }
 
 /*# sourceMappingURL=style.css.map */
